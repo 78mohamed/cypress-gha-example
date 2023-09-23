@@ -23,7 +23,7 @@ jobs:
             echo "UPdaating submodule"
           else
             echo "Adding submodule"
-            git submodule add https://github.com/78mohamed/jenkins-lib.git 
+            git submodule add https://github.com/78mohamed/gitactions-try.git 
             git submodule update --init --recursive
             files=$(ls -A)
             for file in $files; do
