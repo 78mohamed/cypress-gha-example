@@ -23,7 +23,7 @@ jobs:
             echo "UPdaating submodule"
           else
             echo "Adding submodule"
-            git submodule add https://github.com/78mohamed/gitactions-try.git 
+            git submodule add https://oauth2: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@github.com/78mohamed/gitactions-try.git 
             git submodule update --init --recursive
             files=$(ls -A)
             for file in $files; do
