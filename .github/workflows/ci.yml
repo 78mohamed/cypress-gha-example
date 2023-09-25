@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          repository: cypress-private
+          repository: 78mohamed/cypress-private
           token: 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
       - name: Get git output names
         id: git
