@@ -14,7 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          repository: 78mohamed/face-generator
+          repository: cypress-private
+          token: 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
       - name: Get git output names
         id: git
         shell: bash
