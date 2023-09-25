@@ -13,25 +13,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          name: 78mohamed/jenkins-lib
       - name: Get git output names
         id: git
         shell: bash
         run: |
-          if [ -d "./jenkins-lib"* ]; then
-            echo "UPdaating submodule"
-          else
-            echo "Adding submodule"
-            git clone https://oauth2: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@github.com/78mohamed/gitactions-try.git 
-            files=$(ls -A)
-            for file in $files; do
-              echo "$file"
-            done
-          fi
-          git config --global user.email "mohamed.mansour98.54@gmail.com"
-          git config --global user.name "78mohamed"
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      # https://github.com/cypress-io/github-action
+          files=$(ls -A)
+          for file in $files; do
+            echo "$file"
+          done
       - name: Cypress run
         uses: cypress-io/github-action@v5
       # after the test run completes
