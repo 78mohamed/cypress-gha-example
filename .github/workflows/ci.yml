@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          repository: 78mohamed/face-generator
+          repository: 78mohamed/gitactions-try
       - name: Get git output names
         id: git
         shell: bash
