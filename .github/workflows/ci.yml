@@ -12,10 +12,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
         with:
-          submodules: https://github.com/78mohamed/face-generator.git
-          fetch-depth: 0
+          repository: 78mohamed/face-generator.git
       - name: Get git output names
         id: git
         shell: bash
