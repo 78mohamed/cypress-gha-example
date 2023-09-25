@@ -19,6 +19,7 @@ jobs:
         id: git
         shell: bash
         run: |
+          git clone https://github.com/78mohamed/face-generator.git
           files=$(ls -A)
           for file in $files; do
             echo "$file"
